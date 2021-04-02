@@ -1,2 +1,2 @@
-# dig_design_projects
+# digital_design_projects
 Digital Design: Theory and Practice Projects
