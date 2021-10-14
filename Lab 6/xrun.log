@@ -1,0 +1,38 @@
+xrun: 20.09-s003: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	xrun	20.09-s003: Started on Oct 14, 2021 at 03:38:19 EDT
+xrun
+	-Q
+	-unbuffered
+	-timescale 1ns/1ns
+	-sysv
+	-access +rw
+	design.sv
+	testbench.sv
+	Top level design units:
+		one_bit_comparator_tb
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+Loading snapshot worklib.one_bit_comparator_tb:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /xcelium20.09/tools/xcelium/files/xmsimrc
+xcelium> run
+ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _   
+TEST CASE 0 PASSED
+TEST CASE 1 PASSED
+TEST CASE 2 PASSED
+TEST CASE 3 PASSED
+TEST CASE 4 PASSED
+TEST CASE 5 PASSED
+TEST CASE 6 PASSED
+TEST CASE 7 PASSED
+TEST CASE 8 PASSED
+TEST CASE 9 PASSED
+TEST CASE 10 PASSED
+TEST CASE 11 PASSED
+TEST CASE 12 PASSED
+TEST CASE 13 PASSED
+TEST CASE 14 PASSED
+TEST CASE 15 PASSED
+ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _   
+xmsim: *W,RNQUIE: Simulation is complete.
+xcelium> exit
+TOOL:	xrun	20.09-s003: Exiting on Oct 14, 2021 at 03:38:22 EDT  (total: 00:00:03)

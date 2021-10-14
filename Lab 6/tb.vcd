@@ -1,0 +1,143 @@
+$date
+    Oct 14, 2021  03:38:21
+$end
+$version
+    TOOL:	xmsim	20.09-s003
+$end
+$timescale
+    1 ps
+$end
+
+$scope module one_bit_comparator_tb $end
+$var reg       4 !    A [3:0] $end
+$var wire      1 "    Z  $end
+
+$scope module UUT $end
+$var wire      1 #    A [3] $end
+$var wire      1 $    A [2] $end
+$var wire      1 %    A [1] $end
+$var wire      1 &    A [0] $end
+$var wire      1 "    Z  $end
+$var wire      1 '    w1  $end
+$var wire      1 (    w2  $end
+$var wire      1 )    w3  $end
+$var wire      1 *    w4  $end
+$var wire      1 +    w5  $end
+$var wire      1 ,    w6  $end
+$var wire      1 -    w7  $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+b0 !
+1"
+0#
+0$
+0%
+0&
+1'
+1(
+1)
+1*
+1+
+0,
+1-
+$end
+#300000
+b1 !
+1&
+0'
+0-
+0+
+0"
+#500000
+b10 !
+1%
+0&
+1'
+0(
+#700000
+b11 !
+1&
+0'
+#900000
+b100 !
+1$
+0%
+0&
+1'
+1(
+0)
+1+
+1"
+#1100000
+b101 !
+1&
+0'
+0+
+0"
+#1300000
+b110 !
+1%
+0&
+1'
+0(
+#1500000
+b111 !
+1&
+0'
+#1700000
+b1000 !
+1#
+0$
+0%
+0&
+1'
+1(
+1)
+0*
+1-
+1,
+1"
+#1900000
+b1001 !
+1&
+0'
+0-
+#2100000
+b1010 !
+1%
+0&
+1'
+0(
+0,
+0"
+#2300000
+b1011 !
+1&
+0'
+#2500000
+b1100 !
+1$
+0%
+0&
+1'
+1(
+0)
+#2700000
+b1101 !
+1&
+0'
+#2900000
+b1110 !
+1%
+0&
+1'
+0(
+#3100000
+b1111 !
+1&
+0'
+#3200000
