@@ -1,0 +1,36 @@
+xrun: 20.09-s003: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	xrun	20.09-s003: Started on Oct 14, 2021 at 03:48:49 EDT
+xrun
+	-Q
+	-unbuffered
+	-timescale 1ns/1ns
+	-sysv
+	-access +rw
+	design.sv
+	testbench.sv
+  output Q,Qbar;
+         |
+xmvlog: *W,ILLORD (design.sv,23|9): IEEE Std 1364-2005 net and variable declaration must appear after the port declaration.
+  output Q,Qbar;
+              |
+xmvlog: *W,ILLORD (design.sv,23|14): IEEE Std 1364-2005 net and variable declaration must appear after the port declaration.
+	Top level design units:
+		SR_to_JK_conversion_tb
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+Loading snapshot worklib.SR_to_JK_conversion_tb:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /xcelium20.09/tools/xcelium/files/xmsimrc
+xcelium> run
+#########################################
+ SR FLIP FLOP TO JK FLIP FLOP CONVERSION
+#########################################
+J	K	Q	Qbar   PASS/FAIL
+0	0	0	1	 PASS
+0	1	0	1	 PASS
+1	0	1	0	 PASS
+1	1	0	1	 PASS
+#########################################
+Simulation complete via $finish(1) at time 1920 NS + 0
+./testbench.sv:57       	#1000 $finish;
+xcelium> exit
+TOOL:	xrun	20.09-s003: Exiting on Oct 14, 2021 at 03:48:51 EDT  (total: 00:00:02)
