@@ -1,0 +1,205 @@
+$date
+    Oct 14, 2021  03:46:23
+$end
+$version
+    TOOL:	xmsim	20.09-s003
+$end
+$timescale
+    1 ns
+$end
+
+$scope module top_tb $end
+$var reg       4 !    a_tb [3:0] $end
+$var reg       2 "    sel_tb [1:0] $end
+$var wire      4 #    out_tb [3:0] $end
+
+$scope module dut $end
+$var wire      1 $    a [3] $end
+$var wire      1 %    a [2] $end
+$var wire      1 &    a [1] $end
+$var wire      1 '    a [0] $end
+$var wire      2 (    sel [1:0] $end
+$var wire      4 #    out [3:0] $end
+$var wire      1 )    rcaout [3] $end
+$var wire      1 *    rcaout [2] $end
+$var wire      1 +    rcaout [1] $end
+$var wire      1 ,    rcaout [0] $end
+$var wire      4 -    oddevenout [3:0] $end
+$var wire      4 .    div4out [3:0] $end
+$var wire      4 /    twocmpout [3:0] $end
+
+$scope module inst $end
+$var wire      1 &    a [1] $end
+$var wire      1 '    a [0] $end
+$var wire      1 $    b [1] $end
+$var wire      1 %    b [0] $end
+$var wire      1 )    out [3] $end
+$var wire      1 *    out [2] $end
+$var wire      1 +    out [1] $end
+$var wire      1 ,    out [0] $end
+$var wire      1 0    c1  $end
+
+$scope module f1 $end
+$var wire      1 '    a  $end
+$var wire      1 %    b  $end
+$var wire      1 1    cin  $end
+$var wire      1 ,    s  $end
+$var wire      1 0    cout  $end
+$var wire      1 2    w1  $end
+$var wire      1 3    w2  $end
+$var wire      1 4    w3  $end
+$upscope $end
+
+
+$scope module f2 $end
+$var wire      1 &    a  $end
+$var wire      1 $    b  $end
+$var wire      1 0    cin  $end
+$var wire      1 +    s  $end
+$var wire      1 *    cout  $end
+$var wire      1 5    w1  $end
+$var wire      1 6    w2  $end
+$var wire      1 7    w3  $end
+$upscope $end
+
+$upscope $end
+
+
+$scope module inst1 $end
+$var wire      1 $    a [3] $end
+$var wire      1 %    a [2] $end
+$var wire      1 &    a [1] $end
+$var wire      1 '    a [0] $end
+$var reg       4 8    out [3:0] $end
+$upscope $end
+
+
+$scope module inst2 $end
+$var wire      1 $    a [3] $end
+$var wire      1 %    a [2] $end
+$var wire      1 &    a [1] $end
+$var wire      1 '    a [0] $end
+$var wire      4 .    out [3:0] $end
+$upscope $end
+
+
+$scope module inst3 $end
+$var wire      1 $    a [3] $end
+$var wire      1 %    a [2] $end
+$var wire      1 &    a [1] $end
+$var wire      1 '    a [0] $end
+$var reg       4 9    out [3:0] $end
+$upscope $end
+
+
+$scope module inst4 $end
+$var wire      1 )    a [3] $end
+$var wire      1 *    a [2] $end
+$var wire      1 +    a [1] $end
+$var wire      1 ,    a [0] $end
+$var wire      4 -    b [3:0] $end
+$var wire      4 .    c [3:0] $end
+$var wire      4 /    d [3:0] $end
+$var wire      2 (    sel [1:0] $end
+$var reg       4 :    out [3:0] $end
+$upscope $end
+
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+b1110 !
+b0 "
+b101 #
+1$
+1%
+1&
+0'
+b0 (
+0)
+1*
+0+
+1,
+b0 -
+b11 .
+b10 /
+00
+01
+12
+03
+04
+05
+06
+17
+b0 8
+b10 9
+b101 :
+$end
+#100
+b101 !
+b1 "
+b1 (
+0$
+0&
+1'
+02
+14
+10
+07
+0*
+1+
+0,
+b0 :
+b1011 9
+b1 8
+b1 -
+b1 .
+b1011 /
+b0 #
+b1 :
+b1 #
+#200
+b1000 !
+b10 "
+b10 (
+1$
+0%
+0'
+04
+00
+15
+b1000 9
+b0 8
+b0 -
+b10 .
+b1000 /
+b10 :
+b10 #
+#300
+b0 !
+b11 "
+b11 (
+0$
+05
+0+
+b1000 :
+b0 9
+b0 .
+b0 /
+b1000 #
+b0 :
+b0 #
+#400
+b10 !
+b0 "
+b0 (
+1&
+15
+1+
+b10 :
+b1110 9
+b1110 /
+b10 #
+#400
